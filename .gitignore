@@ -1,6 +1,26 @@
+# Secrets
 .env
+*.env
+
+# Python
 .venv/
 __pycache__/
-*.pyc*.csv
+*.pyc
+
+# Data / outputs
 *.csv
 output/
+run/
+
+# Old local Airflow install (superseded by docker-airflow)
+airflow/airflow.db
+airflow/logs/
+airflow/standalone_admin_password.txt
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Docker Airflow runtime junk (keep compose + dags, ignore the rest)
+docker-airflow/logs/
+docker-airflow/plugins/
+docker-airflow/config/
+docker-airflow/__pycache__/
