@@ -24,3 +24,6 @@ docker-airflow/logs/
 docker-airflow/plugins/
 docker-airflow/config/
 docker-airflow/__pycache__/
+
+# ML generated artifacts (regenerate by running ml_prepare/ml_train)
+ml_artifacts/
